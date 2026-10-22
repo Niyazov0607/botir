@@ -1,0 +1,478 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="description" content="Botirjonning shaxsiy portfolio sayti." />
+    <title>Botirjon | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo" aria-label="Botirjon bosh sahifa">
+        <span class="logo-icon">&lt;/&gt;</span
+        ><span class="logo-text">BOTIR</span>
+      </a>
+      <nav class="nav-menu" aria-label="Asosiy navigatsiya">
+        <ul>
+          <li>
+            <a href="#about"><span class="nav-num">01</span> Men haqimda</a>
+          </li>
+          <li>
+            <a href="#family"><span class="nav-num">02</span> Oilam</a>
+          </li>
+          <li>
+            <a href="#projects"><span class="nav-num">03</span> Loyihalarim</a>
+          </li>
+          <li>
+            <a href="#contact"><span class="nav-num">05</span> Aloqa</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <span class="tag">PDP Junior · Toshkent</span>
+          <h1>Salom, men Botir</h1>
+          <p>
+            Kelajak frontend dasturchisiman. Sayt yasashni va g'oyalarni hayotga
+            tatbiq etishni sevaman.
+          </p>
+          <div class="hero-buttons">
+            <a href="#about" class="btn primary"
+              >Men haqimda <span aria-hidden="true">→</span></a
+            >
+            <a href="#projects" class="btn secondary">Loyihalarim</a>
+          </div>
+        </div>
+        <div class="hero-image"><img src="./men.jpg" alt="Botirjon" /></div>
+        <span class="hero-index" aria-hidden="true">01 / 04</span>
+      </section>
+
+      <section id="about" class="section">
+        <span class="section-num">01 — TANISHUV</span>
+        <h2>Men haqimda</h2>
+        <div class="about-card">
+          <img
+            src="./men.jpg"
+            alt="Botirjonning portreti"
+            class="profile-img"
+          />
+          <div class="about-info">
+            <p>
+              Salom! Ismim <strong>Botirjon</strong>. Dasturlashni o'rganaman va
+              kelajakda professional dasturchi bo'lishni orzu qilaman.
+            </p>
+            <ul class="info-list">
+              <li>
+                <span aria-hidden="true">🎂</span
+                ><strong>Tug'ilgan sanam:</strong> 02.12.2012
+              </li>
+              <li>
+                <span aria-hidden="true">🏫</span
+                ><strong>Maktabim:</strong> 23-maktab
+              </li>
+              <li>
+                <span aria-hidden="true">💻</span
+                ><strong>Hozir o'rganyapman:</strong> HTML va CSS
+              </li>
+              <li>
+                <span aria-hidden="true">🏊</span
+                ><strong>Sevimli mashg'ulotim:</strong> suzish
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="family" class="section">
+        <span class="section-num">02 — YAQINLARIM</span>
+        <h2>Mening oilam</h2>
+        <p class="section-desc">
+          Mening eng katta qo'llab-quvvatlovchilarim va yaqinlarim.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <img src="./adam.jpg" alt="Botirjonning dadasi" />
+            <h3>Dadam</h3>
+            <p>Dadam qoyliqda ishlaydilar.</p>
+          </article>
+          <article class="card">
+            <img src="./oyim.jpg" alt="Botirjonning oyisi" />
+            <h3>Oyim</h3>
+            <p>Oyim uy bekasi.</p>
+          </article>
+          <article class="card">
+            <img src="./opam va ukam.jpg" alt="Botirjonning opasi va ukasi" />
+            <h3>Opam va ukam</h3>
+            <p>Opam Interda o'qiydi, ukam esa men bilan 23-maktabda o'qiydi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <span class="section-num">03 — ISHLARIM</span>
+        <h2 class="section-title">Loyihalarim</h2>
+        <p class="section-desc">
+          O'rganish davomida yaratgan loyihalarim va mashqlarim.
+        </p>
+        <div class="project-slider">
+          <button
+            class="carousel-btn project-prev"
+            type="button"
+            aria-label="Oldingi loyihalar"
+            onclick="moveProjects(-1)"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m14.5 18-6-6 6-6" />
+            </svg>
+          </button>
+          <div class="projects-window">
+            <div class="projects-container" id="projectsTrack">
+              <article class="project-card">
+                <div class="project-image">
+                  <img src="./image copy.png" alt="MedCard sayti ko'rinishi" />
+                </div>
+                <div class="project-info">
+                  <span class="project-kind">Veb loyiha</span>
+                  <h3>MedCard</h3>
+                  <p>
+                    Sog'liq va dorilar haqida ma'lumot topishga yordam beruvchi
+                    sayt.
+                  </p>
+                  <a
+                    class="loyiha__anchor"
+                    href="https://madecare-piu1.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Loyihani ko'rish <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-image project-preview preview-calculator"
+                  aria-hidden="true"
+                >
+                  <div class="preview-window">
+                    <span class="preview-dots">● ● ●</span
+                    ><span class="preview-label">Hisob-kitob</span
+                    ><strong>128 × 4</strong>
+                    <div class="preview-result">512</div>
+                    <div class="preview-keys">
+                      <i>7</i><i>8</i><i>9</i><i>÷</i><i>4</i><i>5</i><i>6</i
+                      ><i>×</i><i>1</i><i>2</i><i>3</i><i>+</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <span class="project-kind">Mashq loyihasi</span>
+                  <h3>Hisob-kitob</h3>
+                  <p>Oddiy kalkulyator interfeysi va tugmalar dizayni.</p>
+                  <a
+                    class="loyiha__anchor"
+                    href="https://madecare-piu1.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Loyihani ko'rish <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-image project-preview preview-portfolio"
+                  aria-hidden="true"
+                >
+                  <div class="preview-window portfolio-window">
+                    <span class="preview-label">MY PORTFOLIO</span
+                    ><strong>Creative<br />developer.</strong>
+                    <div class="preview-pill">Selected work&nbsp; ↗</div>
+                    <div class="preview-orb"></div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <span class="project-kind">Mashq loyihasi</span>
+                  <h3>Portfolio dizayni</h3>
+                  <p>Shaxsiy ishlarni taqdim etish uchun sahifa maketi.</p>
+                  <a
+                    class="loyiha__anchor"
+                    href="https://madecare-piu1.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Loyihani ko'rish <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <div
+                  class="project-image project-preview preview-shop"
+                  aria-hidden="true"
+                >
+                  <div class="preview-window shop-window">
+                    <span class="preview-label"
+                      >daily goods&nbsp; · &nbsp;shop</span
+                    ><strong>O'zingizga<br />yoqqanini tanlang.</strong>
+                    <div class="shop-product">
+                      <span>✳</span><i>Yangi kolleksiya</i
+                      ><b>Ko'rish&nbsp; →</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <span class="project-kind">Mashq loyihasi</span>
+                  <h3>Mini do'kon</h3>
+                  <p>Mahsulotlar uchun sodda va qulay do'kon sahifasi.</p>
+                  <a
+                    class="loyiha__anchor"
+                    href="https://madecare-piu1.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Loyihani ko'rish <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+          <button
+            class="carousel-btn project-next"
+            type="button"
+            aria-label="Keyingi loyihalar"
+            onclick="moveProjects(1)"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9.5 18 6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="carousel-dots project-dots"
+          id="projectsDots"
+          aria-label="Loyihalar sahifalari"
+        ></div>
+      </section>
+
+      <section id="classmates" class="section classmates-section">
+        <span class="section-num">04 — JAMOA</span>
+        <h2>Mening guruhdoshlarim</h2>
+        <p class="section-desc">Birga o'qiyotgan guruhdoshlarim.</p>
+        <div class="carousel">
+          <button
+            class="carousel-btn prev"
+            type="button"
+            aria-label="Oldingi guruhdoshlar"
+            onclick="moveCarousel(-1)"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m14.5 18-6-6 6-6" />
+            </svg>
+          </button>
+          <div class="carousel-window">
+            <div class="carousel-track" id="carouselTrack">
+              <article class="classmate-card">
+                <img src="./no neme.jpg" alt="Dovudbek" />
+                <h3>Dovudbek</h3>
+                <p>PDP Junior o'quvchisi</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./husnida.jpg" alt="Husnida" />
+                <h3>Husnida</h3>
+                <p>Frontend o'rganuvchi</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./sunatbek.jpg" alt="Sunatbek" />
+                <h3>Sunatbek</h3>
+                <p>Dasturchi</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./shoxrux.jpg" alt="Shoxrux" />
+                <h3>Shoxrux</h3>
+                <p>Web developer</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./shoxbrat.jpg" alt="Shohjahon" />
+                <h3>Shohjahon</h3>
+                <p>PDP Junior o'quvchisi</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./muhamadali.jpg" alt="Muhamadali" />
+                <h3>Muhamadali</h3>
+                <p>Frontend developer</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./mandan pas.jpg" alt="Ozod" />
+                <h3>Ozod</h3>
+                <p>Programmer</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./javohir.jpg" alt="Javohir" />
+                <h3>Javohir</h3>
+                <p>Web developer</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./jafar.jpg" alt="Jafar" />
+                <h3>Jafar</h3>
+                <p>Frontend o'rganuvchi</p>
+              </article>
+              <article class="classmate-card">
+                <img src="./ismoil.jpg" alt="Ismoil" />
+                <h3>Ismoil</h3>
+                <p>PDP Junior o'quvchisi</p>
+              </article>
+            </div>
+          </div>
+          <button
+            class="carousel-btn next"
+            type="button"
+            aria-label="Keyingi guruhdoshlar"
+            onclick="moveCarousel(1)"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9.5 18 6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="carousel-dots"
+          id="carouselDots"
+          aria-label="Guruhdoshlar sahifalari"
+        ></div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <span class="section-num">05 — ALOQA</span>
+        <h2>Men bilan bog'laning</h2>
+        <a class="phone" href="tel:+998956990141">+998 95 699 01 41</a>
+        <a class="email" href="mailto:botirjon@gmail.com">botirjon@gmail.com</a>
+      </section>
+    </main>
+    <footer><p>© 2026 Botirjon. Barcha huquqlar himoyalangan.</p></footer>
+
+    <script>
+      const track = document.getElementById("carouselTrack");
+      const cards = document.querySelectorAll(".classmate-card");
+      const dotsContainer = document.getElementById("carouselDots");
+      let currentIndex = 0;
+
+      const projectsTrack = document.getElementById("projectsTrack");
+      const projectCards = document.querySelectorAll(".project-card");
+      const projectsDots = document.getElementById("projectsDots");
+      let projectPage = 0;
+
+      function getVisibleProjects() {
+        return 1;
+      }
+
+      function getProjectPageStarts() {
+        const visible = getVisibleProjects();
+        const starts = [];
+        for (let start = 0; start < projectCards.length; start += visible)
+          starts.push(start);
+        return starts;
+      }
+
+      function updateProjects() {
+        if (!projectCards.length) return;
+        const cardWidth = projectCards[0].getBoundingClientRect().width;
+        const gap = Number.parseFloat(getComputedStyle(projectsTrack).gap) || 0;
+        const pageStarts = getProjectPageStarts();
+        projectPage = Math.min(projectPage, pageStarts.length - 1);
+        projectsTrack.style.transform = `translateX(-${pageStarts[projectPage] * (cardWidth + gap)}px)`;
+        projectsDots.querySelectorAll(".carousel-dot").forEach((dot, index) => {
+          dot.classList.toggle("active", index === projectPage);
+          dot.setAttribute(
+            "aria-current",
+            index === projectPage ? "true" : "false",
+          );
+        });
+      }
+
+      function moveProjects(direction) {
+        const pageCount = getProjectPageStarts().length;
+        projectPage = (projectPage + direction + pageCount) % pageCount;
+        updateProjects();
+      }
+
+      function createProjectDots() {
+        projectsDots.innerHTML = "";
+        getProjectPageStarts().forEach((_, index) => {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.className = "carousel-dot";
+          dot.setAttribute("aria-label", `Loyihalar ${index + 1}-sahifa`);
+          dot.onclick = () => {
+            projectPage = index;
+            updateProjects();
+          };
+          projectsDots.appendChild(dot);
+        });
+        updateProjects();
+      }
+
+      function getVisibleCards() {
+        if (window.innerWidth <= 600) return 1;
+        if (window.innerWidth <= 900) return 2;
+        return 3;
+      }
+
+      function getMaxIndex() {
+        return Math.max(0, cards.length - getVisibleCards());
+      }
+
+      function updateCarousel() {
+        if (!cards.length) return;
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const gap = Number.parseFloat(getComputedStyle(track).gap) || 0;
+        track.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+        updateDots();
+      }
+
+      function moveCarousel(direction) {
+        const maxIndex = getMaxIndex();
+        currentIndex =
+          (currentIndex + direction + maxIndex + 1) % (maxIndex + 1);
+        updateCarousel();
+      }
+
+      function createDots() {
+        dotsContainer.innerHTML = "";
+        for (let i = 0; i <= getMaxIndex(); i++) {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.className = "carousel-dot";
+          dot.setAttribute("aria-label", `Guruhdoshlar ${i + 1}-sahifa`);
+          dot.onclick = () => {
+            currentIndex = i;
+            updateCarousel();
+          };
+          dotsContainer.appendChild(dot);
+        }
+        updateDots();
+      }
+
+      function updateDots() {
+        dotsContainer
+          .querySelectorAll(".carousel-dot")
+          .forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+            dot.setAttribute(
+              "aria-current",
+              index === currentIndex ? "true" : "false",
+            );
+          });
+      }
+
+      window.addEventListener("resize", () => {
+        currentIndex = Math.min(currentIndex, getMaxIndex());
+        createDots();
+        updateCarousel();
+        createProjectDots();
+      });
+      createDots();
+      updateCarousel();
+      createProjectDots();
+    </script>
+  </body>
+</html>
